@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    tools:context=".activities.ResultActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/verify_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:onClick="finish_results"
+                android:layout_centerVertical="true"
+                app:tint="@color/primary"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/verify_back"
+                android:text="@string/results"
+                android:textColor="@color/primary"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:id="@+id/textcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:singleLine="true"
+                android:textColor="@color/primary"
+                android:textSize="32sp"
+              />
+            <TextView
+                android:id="@+id/textque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="32sp"
+                android:textStyle="italic"
+                android:textColor="@color/primary"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/textRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="32sp"
+                android:textStyle="italic"
+                android:textColor="@color/primary"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp" >
+
+        <Button
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/quiz_details"
+            android:textColor="#ffffff"
+            android:background="@drawable/option_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+           />
+
+        <Button
+            android:id="@+id/rcontinue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/continue_str"
+            android:layout_below="@id/details"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/option_bg"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
