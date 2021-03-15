@@ -7,7 +7,7 @@
 * user can also select the questions types (multiple choice/ True/False).
 * User score will be calculated by difficullity level (easy=1, meduim=2, hard=3).
 * User can view the score board.
-* User can also see all details of his attempted quetions in an list.
+* User can also see all details of his attempted quetions in a list.
 
 ## Used Libraries: <br/>
 
